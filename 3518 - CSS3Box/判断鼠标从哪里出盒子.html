@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+<style type="text/css">
+	#div1{
+		width: 400px;
+		height: 400px;
+		background: red;
+		margin-left: 400px;
+		margin-top: 100px;
+		position: absolute;
+	}
+</style>
+<script type="text/javascript">
+	window.onload = function  () {
+	  var oDiv= document.getElementById('div1');
+	  oDiv.onmouseover = function(ev){
+	  	var oEvent = ev || event;
+	  	var disX = oEvent.clientX - oDiv.offsetLeft;
+	  	var disY = oEvent.clientY - oDiv.offsetTop;
+	  	var oDivW = oDiv.offsetWidth/2;
+	  	var oDivH = oDiv.offsetHeight/2;
+	  	if (disX - oDivW > 0 && disY - oDivH > 0 {
+	  		
+	  	} else{};
+	  }
+	}
+</script>
+</head>
+
+<body>
+<div id="div1"></div>
+</body>
+</html>
